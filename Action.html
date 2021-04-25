@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Action</title>
+</head>
+<body id="body">
+    <img class="logo" src="images/logo-01.png" alt="logo">
+    
+    <section class="nav-container" id="container">
+        <nav class="menu">
+            <a class="genre active" href="#" id="action" onClick="getgenre(this.id)">Action</a>
+            <a class="genre" href="#"id="animation" onClick="getgenre(this.id)">Animation</a>
+            <a class="genre" href="#"id="crime" onClick="getgenre(this.id)">Crime</a>
+            <a class="genre" href="#"id="drama" onClick="getgenre(this.id)">Drama</a>
+            <a class="genre" href="#"id="fantasy" onClick="getgenre(this.id)">Fantasy</a>
+            <a class="genre" href="#"id="horror" onClick="getgenre(this.id)">Horror</a>
+        </nav>
+        <div class="mobilenav" onclick="mobmenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </section>
+    <div class="menulist" id="menulist" style="display: none;">
+        <a class="genre active" href="#" id="action" onClick="getgenre(this.id)">Action</a>
+        <a class="genre" href="#"id="animation" onClick="getgenre(this.id)">Animation</a>
+        <a class="genre" href="#"id="crime" onClick="getgenre(this.id)">Crime</a>
+        <a class="genre" href="#"id="drama" onClick="getgenre(this.id)">Drama</a>
+        <a class="genre" href="#"id="fantasy" onClick="getgenre(this.id)">Fantasy</a>
+        <a class="genre" href="#"id="horror" onClick="getgenre(this.id)">Horror</a>
+    </div>
+    <section class="home" id="homepage">
+        <h1 class="genre-large" id="headergenre">
+            ACTION
+        </h1>
+        <a class="view" href="#movielist" onClick="view()">View List</a>
+    </section>
+    
+    <section class="info" id="movielist">
+        <h2 class="subheading" id="top">
+            ACTION MOVIES
+        </h2>
+        <p class="subinfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptatum sunt quod recusandae alias iusto ullam velit facere molestias quidem voluptatem excepturi provident sequi veniam nesciunt, aperiam adipisci tempore ipsum.</p>
+        
+    </section>
+    <section id="list">
+        <script src="script.js"></script>
+    </section>
+</body>
+</html>
